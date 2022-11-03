@@ -6,7 +6,7 @@
 ```
 python -r requirements.txt
 ```
-- call the script and pass the name or names of the csv file without spaces
+- call the script and pass the name of the csv file without spaces
 ```
 python main.py HNGi9.csv
 ```
