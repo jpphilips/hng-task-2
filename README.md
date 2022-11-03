@@ -1,4 +1,4 @@
-# hng-task-2
+# Hng-task-2
 
  A script tat uses CSV provided by the teams, generates a CHIP-0007 compatible json, calculates the sha256 of the json file and append it to each line in the csv (as a filename.output.csv)
 
