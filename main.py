@@ -74,7 +74,6 @@ def json_gen(content_list):
                 "id": df.at[index, 'UUID'],
             },
         }
-        print(info)
 
         # Serializing json
         json_object = json.dumps(info, indent=4)
@@ -100,6 +99,6 @@ contents = content_list(csv_file)
 contents = json_gen(contents)
 
 # write result to new csv file
-with open('HNG_NFT_DATA.csv', 'w') as f:
+with open(f'new_{csv_file}', 'w') as f:
     for content in contents:
         f.write(f'{content}\n')
