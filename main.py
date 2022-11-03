@@ -1,5 +1,14 @@
 import hashlib
 import json
+import os
+import sys
+import pandas as pd
+
+
+# Get the csv file
+args = sys.argv[1:]  # get command line *args
+assert args, "No file/dir was provided"  # raise error is no arg is passed
+csv_file = args[0]
 
 
 def content_list(csv_file):
@@ -10,18 +19,18 @@ def content_list(csv_file):
     '''
     with open(csv_file, 'r') as f:
         contents = f.readlines()
-        for content in contents:
-            content = content.strip(r'\n')
+        for i, content in enumerate(contents):
+            contents[i] = content.rstrip()
         return contents
 
 
-def sha256_hex(filename):
+def sha256_hex(filepath):
     '''
-    -takes a filename
+    -takes a filepath
     -Reads the file in the current working directory
     -Returns the sha256 hex_value of the file
     '''
-    with open(filename, 'r') as f:
+    with open(filepath, 'rb') as f:
         content = f.read()
         sha256 = hashlib.sha256()
         sha256.update(content)
@@ -37,46 +46,52 @@ def json_gen(content_list):
     -calls the sha256_hex function for each item
     -returns a modified list containing the hex value of each item
     '''
-    for content in contents_list[1:]:
-        values_of_content_columns = content.split(',')
+    df = pd.read_csv(csv_file)
+    content_list[0] = content_list[0] + ',Hash'
+    for index, row in df.iterrows():
+        # values_of_content_columns = content.split(',')
         info = {
             "format": "CHIP-0007",
-            "name": values_of_content_columns[1],
-            "description": values_of_content_columns[2],
+            "name": df.at[index, 'Filename'],
+            "description": df.at[index, 'Description'],
             "minting_tool": "SuperMinter/2.5.2",
-            "sensitive_content": false,
-            "series_number": values_of_content_columns[0],
-            "series_total": 400,
+            "sensitive_content": False,
+            "series_number": int(df.at[index, 'Series Number']),
+            "series_total": 420,
             "attributes": [
                 {
                     "trait_type": "Gender",
-                    "value": values_of_content_columns[4],
+                    "value": df.at[index, 'Gender'],
                 },
+                {
+                    "trait_type": "Description",
+                    "value": df.at[index, 'Attributes'],
+                }
 
             ],
             "collection": {
-                "name": "HNG NFT Collection",
-                "id": values_of_content_columns[3],
-            }
+                "name": "Zuri NFT Collection",
+                "id": df.at[index, 'UUID'],
+            },
         }
+        print(info)
 
         # Serializing json
         json_object = json.dumps(info, indent=4)
 
-        json_filename = f'nft{values_of_content_columns[1]}.json'
+        json_filename = f"nft{df.at[index, 'Filename']}.json"
+        json_filepath = os.path.join(os.getcwd(), "json_data", json_filename)
 
-        with open(json_filename, 'w') as outfile:
+        with open(json_filepath, 'w') as outfile:
             outfile.write(json_object)
 
-        hex_value = sha256_hex(json_filename)
+        hex_value = sha256_hex(json_filepath)
 
-        content = content + f',{values_of_content_columns[1]}.{hex_value}.csv'
-
+        new_content = content_list[index+1] + \
+            f",{df.at[index, 'Filename']}.{hex_value}.csv"
+        content_list[index+1] = new_content
     return content_list
 
-
-# Get the csv file
-csv_file = 'file path'
 
 # Make a list of the file contents
 contents = content_list(csv_file)
@@ -87,4 +102,4 @@ contents = json_gen(contents)
 # write result to new csv file
 with open('HNG_NFT_DATA.csv', 'w') as f:
     for content in contents:
-        f.write(f'{content}\\n')
+        f.write(f'{content}\n')

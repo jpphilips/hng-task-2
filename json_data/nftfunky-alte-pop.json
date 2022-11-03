@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "funky-alte-pop",
+    "description": "Funke is always the life of every party, strong gen z advocate.",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 419,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Hair:  Two red buns, Skin color: White, Acessories Yellow sun shades, Expression: Rugged"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "b6753a8b-6127-4e97-812b-99e465791ba3"
+    }
+}

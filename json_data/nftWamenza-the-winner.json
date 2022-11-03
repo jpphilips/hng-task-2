@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "Wamenza-the-winner",
+    "description": "wamenza the leader",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 339,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "7348c9ed-4ac9-4785-9434-0a1f0dcaf8d8"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "abacha-loves-smoking",
+    "description": "Abacha loves taking pipe",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 124,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Pleading eyes and a pipe "
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "8ac6d95f-0cf3-4f54-9cf2-be8834b3004c"
+    }
+}

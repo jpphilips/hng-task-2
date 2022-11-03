@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "Lucy-the-fumigator",
+    "description": "Lucy is nicknamed the pest hilter",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 274,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "c7269d44-aab3-41e7-a54f-18a14f575a6b"
+    }
+}

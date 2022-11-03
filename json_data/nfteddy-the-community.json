@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "eddy-the-community",
+    "description": "Man of the people ",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 127,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Two teeth and kaftan attire "
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "5cabf9d9-882b-459e-9253-8c07eb045e2d"
+    }
+}

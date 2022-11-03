@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "azikiwe-popular-trader",
+    "description": "Azikiwe is a popular trader",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 121,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Gold teeth, clothe:isiagu"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "7ebde325-8efc-4997-811a-b5686269929e"
+    }
+}

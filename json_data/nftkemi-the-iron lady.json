@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "kemi-the-iron lady",
+    "description": "kemi the strongest woman known to the town of  igbede people",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 37,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "35b11a31-5b92-49f4-8fb1-30f255d22054"
+    }
+}

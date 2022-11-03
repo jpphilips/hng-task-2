@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "adaora-the-choir mistress",
+    "description": "Adaora, our able choir mistress that will take your boyfriend for vanishing.",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 372,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Accessory: choker necklace, Eyes: brown, Hair: black"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "df944505-da1a-424e-88aa-b9d365bd2775"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "hannah-the-singer",
+    "description": "Hannah loves singing and belongs to choir",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 105,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "281f5bd7-5282-458b-9811-e369980e7dee"
+    }
+}

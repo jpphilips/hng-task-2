@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "patrick-of-bikinibottom",
+    "description": "a white man who loves the African culture and associates with their dressing",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 64,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "hair: bald, strengths: adaptation, weakness: fluency"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "064c7b84-59d3-11ed-9b6a-0242ac120002"
+    }
+}

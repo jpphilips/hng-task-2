@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "emeka-the-chief",
+    "description": "Crowd are always at Emeka's house and people respect him",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 356,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "195e89c8-0b6f-43ad-9a2c-d20f03439e96"
+    }
+}

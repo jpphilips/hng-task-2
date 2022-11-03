@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "avatar-aang",
+    "description": "a man who is ready to save the world",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 76,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "hair: bald, strength: mind games, weakness: insomia"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "169f93a0-59d2-11ed-9b6a-0242ac120002"
+    }
+}

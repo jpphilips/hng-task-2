@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "ade-omo-yoruba",
+    "description": "ade a yourba man takes pride in the yourba tribe",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 27,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "92984fa0-310b-4377-8a10-15965d044383"
+    }
+}

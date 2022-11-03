@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "rofiat-the-marketer",
+    "description": "Rofiat, the distressed marketing intern.",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 366,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Eyes: Brown, Hair: Purple dreadlocks"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "1e4d9bda-f6f9-4e7a-9381-bee4b074b56d"
+    }
+}

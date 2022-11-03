@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "edu-the-biggest-trader",
+    "description": "The biggest merchant in west coast ",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 129,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Blue eyes"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "48d1de5f-5f3f-46aa-b2fd-68420a8e802b"
+    }
+}

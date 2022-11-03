@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "phoebe-queen-bee",
+    "description": NaN,
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 98,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": NaN
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "1277e9c0-81dc-4747-89df-a9d2ae4fcf96"
+    }
+}

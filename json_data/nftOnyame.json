@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "Onyame",
+    "description": "Onyame is the goddess of the moon of the ghana region",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 396,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "fb148f97-d309-45a4-b902-4e066ca13f96"
+    }
+}

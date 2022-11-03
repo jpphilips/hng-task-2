@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "june-binary-monk",
+    "description": "she has a twin thats from Tibet ",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 53,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "102c4cdb-f812-44fd-bf47-5065284c6075"
+    }
+}

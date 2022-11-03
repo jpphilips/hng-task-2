@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "modinat-the-troublesome",
+    "description": "Modinat, The queen of Gbas Gbos.",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 368,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Teeth: vampire teeth, Accessory: brown glasses, Hair: long maroon hair"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "49eb44e8-1117-463b-b7b3-1bcea4258362"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "obasanjo-funny-guy",
+    "description": "Obasanjo is so hilarious ",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 122,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Cloth:ankara "
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "c136a120-a339-4080-96ca-1c93845c5848"
+    }
+}

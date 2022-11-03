@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "akwaaba-ghana",
+    "description": "A depressed gothic introvert",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 228,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "d1e8b38b-994b-487c-890b-9034d3ab7dcb"
+    }
+}

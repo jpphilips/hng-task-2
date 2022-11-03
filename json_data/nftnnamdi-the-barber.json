@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "nnamdi-the-barber",
+    "description": "Nnamdi is a baber that does celebrity haircuts",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 115,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "152758f3-9414-45a2-a809-95cb05a3de13"
+    }
+}

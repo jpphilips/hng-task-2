@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "cynthia-cute-eyes",
+    "description": "Cynthia with a priceless cute eyes",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 138,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Long hair "
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "5d12847b-6d71-4691-8337-2e6ef3e283b2"
+    }
+}

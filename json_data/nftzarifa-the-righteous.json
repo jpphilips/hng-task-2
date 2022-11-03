@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "zarifa-the-righteous",
+    "description": "Meet Zarifa, a proper baddie for Christ.",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 367,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Eyes: Blue Hair: Pink"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "c6955d16-c343-46bc-9bed-c069ea8cc65a"
+    }
+}

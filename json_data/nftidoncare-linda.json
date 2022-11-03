@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "idoncare-linda",
+    "description": "Linda is a beautiful but very annoying girl, she turns every thing to a fight.",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 413,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "female"
+        },
+        {
+            "trait_type": "Description",
+            "value": "Hair: Orange bob, Skin Colour: Caramel, Expression: Mischievous"
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "ed04b47c-ae98-4db2-b71b-04d7bb976d45"
+    }
+}

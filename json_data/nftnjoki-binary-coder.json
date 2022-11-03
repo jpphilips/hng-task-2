@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "njoki-binary-coder",
+    "description": "she codes with the best and tops the set",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 48,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "9b59bdb4-0c6c-4107-9d72-6d38d308edb4"
+    }
+}

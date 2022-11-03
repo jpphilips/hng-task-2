@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "Ifeanyi-the-dj",
+    "description": "Ifeanyi is a music dj that performs at events",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 109,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "male"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "030f665d-2cd7-4376-aef5-4030dad9f2d6"
+    }
+}

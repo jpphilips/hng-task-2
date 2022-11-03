@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "femi-the-honorable",
+    "description": "honorable femi is the modern day politician. everything he does is only to further his political career",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 175,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Male"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "af53bf52-b517-4347-adc6-07cf30c19025"
+    }
+}

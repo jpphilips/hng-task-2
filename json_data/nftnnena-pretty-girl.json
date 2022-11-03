@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "nnena-pretty-girl",
+    "description": "Nnena is beautiful girl that loves to talk about her beauty",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 113,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "d9477612-ad63-408e-8d12-24679c647b32"
+    }
+}

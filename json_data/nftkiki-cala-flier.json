@@ -1,0 +1,23 @@
+{
+    "format": "CHIP-0007",
+    "name": "kiki-cala-flier",
+    "description": "she flies first class and gets the best deals",
+    "minting_tool": "SuperMinter/2.5.2",
+    "sensitive_content": false,
+    "series_number": 51,
+    "series_total": 420,
+    "attributes": [
+        {
+            "trait_type": "Gender",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Description",
+            "value": NaN
+        }
+    ],
+    "collection": {
+        "name": "Zuri NFT Collection",
+        "id": "d24aefff-c9fc-4ea9-a7cf-1b741076c822"
+    }
+}
