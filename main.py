@@ -28,17 +28,17 @@ def sha256_hex(filepath):
 df = pd.read_csv(csv_file)
 
 for index, row in df.iterrows():
-    #get attributes column
+    # get attributes column
     attributes = df.at[index, 'attributes']
     attributes_list = attributes.split(';')
 
-    #clean data
+    # clean data
     if attributes_list[-1] == '' or attributes_list[-1] == ' ':
         attributes_list.pop()
 
     attributes_dict_list = []
 
-    #create list of attributes
+    # create list of attributes
     for attribute in attributes_list:
         traits = attribute.split(':')
         trait_type = traits[0]
@@ -50,7 +50,7 @@ for index, row in df.iterrows():
 
         attributes_dict_list.append(trait_dict)
 
-    #maintain team names
+    # maintain team names
     team_name = df.at[index, 'TEAM NAMES']
     if str(team_name) != 'nan':
         new_team_name = team_name
@@ -73,21 +73,24 @@ for index, row in df.iterrows():
             "name": "Zuri NFT Collection for Free Lunch",
             "id": "b774f676-c1d5-422e-beed-00ef5510c64d",
         },
+        "data": {
+            "uuid": df.at[index, 'UUID']
+        }
     }
 
     # Serializing json
     json_object = json.dumps(info, indent=4)
 
-    #create json file
+    # create json file
     json_filename = f"nft{df.at[index, 'Filename']}.json"
     json_filepath = os.path.join(os.getcwd(), "json_data", json_filename)
 
     with open(json_filepath, 'w') as outfile:
         outfile.write(json_object)
 
-    #get hash of json file and add to hash column
+    # get hash of json file and add to hash column
     hex_value = sha256_hex(json_filepath)
     df['Hash'] = f"{df.at[index, 'Filename']}.{hex_value}.csv"
 
-#create output csv
+# create output csv
 df.to_csv(f'new_{csv_file}', index=False)
