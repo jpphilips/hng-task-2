@@ -12,14 +12,14 @@ python main.py HNGi9.csv
 ```
 ## Output
 
--will create Json files of each row of the csv in the 'json_data' folder
--will create a new csv 'new_filename' with the udated data
+- will create Json files of each row of the csv in the 'json_data' folder
+- will create a new csv 'new_filename' with the updated data
 
 ## Author
 [JPPhilips](https://www.github.com/jpphilips)
 
 
-## Disclaimers, if any
+## Disclaimers
 
 if not installed, need to:
-- python.exe
+- insatll python.exe
