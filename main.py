@@ -11,19 +11,6 @@ assert args, "No file/dir was provided"  # raise error is no arg is passed
 csv_file = args[0]
 
 
-def content_list(csv_file):
-    '''
-    -Takes a filename
-    -Reads the file in the current working directory
-    -Returns the contents of the file as a list
-    '''
-    with open(csv_file, 'r') as f:
-        contents = f.readlines()
-        for i, content in enumerate(contents):
-            contents[i] = content.rstrip()
-        return contents
-
-
 def sha256_hex(filepath):
     '''
     -takes a filepath
@@ -38,67 +25,69 @@ def sha256_hex(filepath):
         return hex_value
 
 
-def json_gen(content_list):
-    '''
-    -Takes a list
-    -Creates a dictionary for each item in the list
-    -Creates a json file for each item
-    -calls the sha256_hex function for each item
-    -returns a modified list containing the hex value of each item
-    '''
-    df = pd.read_csv(csv_file)
-    content_list[0] = content_list[0] + ',Hash'
-    for index, row in df.iterrows():
-        # values_of_content_columns = content.split(',')
-        info = {
-            "format": "CHIP-0007",
-            "name": df.at[index, 'Filename'],
-            "description": df.at[index, 'Description'],
-            "minting_tool": "SuperMinter/2.5.2",
-            "sensitive_content": False,
-            "series_number": int(df.at[index, 'Series Number']),
-            "series_total": 420,
-            "attributes": [
-                {
-                    "trait_type": "Gender",
-                    "value": df.at[index, 'Gender'],
-                },
-                {
-                    "trait_type": "Description",
-                    "value": df.at[index, 'Attributes'],
-                }
+df = pd.read_csv(csv_file)
 
-            ],
-            "collection": {
-                "name": "Zuri NFT Collection",
-                "id": df.at[index, 'UUID'],
-            },
+for index, row in df.iterrows():
+    #get attributes column
+    attributes = df.at[index, 'attributes']
+    attributes_list = attributes.split(';')
+
+    #clean data
+    if attributes_list[-1] == '' or attributes_list[-1] == ' ':
+        attributes_list.pop()
+
+    attributes_dict_list = []
+
+    #create list of attributes
+    for attribute in attributes_list:
+        traits = attribute.split(':')
+        trait_type = traits[0]
+        trait_value = traits[1]
+        trait_dict = {
+            'trait_type': trait_type.strip(),
+            'value': trait_value.strip(),
         }
 
-        # Serializing json
-        json_object = json.dumps(info, indent=4)
+        attributes_dict_list.append(trait_dict)
 
-        json_filename = f"nft{df.at[index, 'Filename']}.json"
-        json_filepath = os.path.join(os.getcwd(), "json_data", json_filename)
+    #maintain team names
+    team_name = df.at[index, 'TEAM NAMES']
+    if str(team_name) != 'nan':
+        new_team_name = team_name
 
-        with open(json_filepath, 'w') as outfile:
-            outfile.write(json_object)
+    info = {
+        "format": "CHIP-0007",
+        "name": df.at[index, 'Filename'],
+        "description": df.at[index, 'Description'],
+        "minting_tool": new_team_name if str(team_name) == 'nan' else team_name,
+        "sensitive_content": False,
+        "series_number": int(df.at[index, 'Series Number']),
+        "series_total": 420,
+        "attributes": [
+            {
+                "trait_type": "Gender",
+                "value": df.at[index, 'Gender'],
+            },
+        ] + attributes_dict_list,
+        "collection": {
+            "name": "Zuri NFT Collection for Free Lunch",
+            "id": "b774f676-c1d5-422e-beed-00ef5510c64d",
+        },
+    }
 
-        hex_value = sha256_hex(json_filepath)
+    # Serializing json
+    json_object = json.dumps(info, indent=4)
 
-        new_content = content_list[index+1] + \
-            f",{df.at[index, 'Filename']}.{hex_value}.csv"
-        content_list[index+1] = new_content
-    return content_list
+    #create json file
+    json_filename = f"nft{df.at[index, 'Filename']}.json"
+    json_filepath = os.path.join(os.getcwd(), "json_data", json_filename)
 
+    with open(json_filepath, 'w') as outfile:
+        outfile.write(json_object)
 
-# Make a list of the file contents
-contents = content_list(csv_file)
+    #get hash of json file and add to hash column
+    hex_value = sha256_hex(json_filepath)
+    df['Hash'] = f"{df.at[index, 'Filename']}.{hex_value}.csv"
 
-# Generate and hash jason files. Amend contents
-contents = json_gen(contents)
-
-# write result to new csv file
-with open(f'new_{csv_file}', 'w') as f:
-    for content in contents:
-        f.write(f'{content}\n')
+#create output csv
+df.to_csv(f'new_{csv_file}', index=False)

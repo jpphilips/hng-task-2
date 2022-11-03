@@ -6,18 +6,9 @@
     "sensitive_content": false,
     "series_number": 16,
     "series_total": 420,
-    "attributes": [
-        {
-            "trait_type": "Gender",
-            "value": "male"
-        },
-        {
-            "trait_type": "Description",
-            "value": NaN
-        }
-    ],
+    "attributes": null,
     "collection": {
-        "name": "Zuri NFT Collection",
-        "id": "808f7007-6552-4efa-bd13-4b7c337b102b"
+        "name": "Zuri NFT Collection for Free Lunch",
+        "id": "b774f676-c1d5-422e-beed-00ef5510c64d"
     }
 }

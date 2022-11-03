@@ -1,10 +1,10 @@
 {
     "format": "CHIP-0007",
-    "name": "salam-the-odogwu",
-    "description": "Salam is a big time textile marketer always sourcing for quality materials.",
+    "name": "charles-the-exporter",
+    "description": "Charles a business man an importer and exporter never to be caught idle.",
     "minting_tool": "SuperMinter/2.5.2",
     "sensitive_content": false,
-    "series_number": 23,
+    "series_number": 24,
     "series_total": 420,
     "attributes": null,
     "collection": {
