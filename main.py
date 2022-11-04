@@ -29,7 +29,7 @@ df = pd.read_csv(csv_file)
 
 for index, row in df.iterrows():
     # get attributes column
-    attributes = df.at[index, 'attributes']
+    attributes = df.at[index, 'Attributes']
     attributes_list = attributes.split(';')
 
     # clean data
@@ -42,7 +42,7 @@ for index, row in df.iterrows():
     for attribute in attributes_list:
         traits = attribute.split(':')
         trait_type = traits[0]
-        trait_value = traits[1]
+        trait_value = traits[1] if traits[1] else ''
         trait_dict = {
             'trait_type': trait_type.strip(),
             'value': trait_value.strip(),
